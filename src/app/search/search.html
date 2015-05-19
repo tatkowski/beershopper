@@ -1,0 +1,12 @@
+<h3>Find beers at Systemet</h3>
+
+  <form ng-submit="vm.search()">
+      <input type="text" placeholder="Type to search" ng-model="vm.searchTerm"/>
+      <button type="submit" ng-click="vm.submit()">Add</button>
+    </form>
+
+<ul class="search-results">
+  <li class="todo-item" ng-repeat="todo in vm.searchResults">
+    <label>{{todo.name}}</label>
+  </li>
+</ul>
